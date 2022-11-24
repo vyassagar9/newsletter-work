@@ -1,0 +1,931 @@
+@import url('font/AvenirLTStd-Black.otf');
+@import url('font/AvenirLTStd-Heavy.otf');
+@import url('font/AvenirLTStd-Medium.otf');
+@import url('font/AvenirLTStd-Light.otf');
+
+/* html {
+    scroll-behavior: smooth;
+  } */
+
+.banner {
+    background: url('img/banner_01.png') no-repeat center center;
+    background-size: cover;
+    min-height:100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* .banner::after {
+    content: '';
+    background: #000000;
+    opacity: 0.2;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.news-logo {
+    margin-top: -30%;
+}
+
+.banner-content h1 {
+    font-size: 54px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2em 0em;
+    font-family: 'AvenirLtStd-Heavy';
+}
+
+.section-blue{
+    background: #0a3266;
+    padding: 30px 0px;
+}
+.section-blue > h2 {
+    width: 270px;
+    background-color: #ffffff;
+    padding: 12px 15px;
+    font-size: 58px;
+    font-family: 'AvenirLtStd-Heavy';
+    color: #0a3266;
+    text-align: right;
+}
+
+.nav-newsletter {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.nav-newsletter li {
+    color: #ffffff;
+    font-family: 'AvenirLtStd-Medium';
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.nav-newsletter li::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #f99d2a;
+    position: absolute;
+    left: 20px;
+    margin-top: 8px;
+}
+
+.nav-newsletter li a {
+    color: #ffffff;
+}
+
+.section-white {
+    background-color: #ffffff;
+    padding: 30px 0px;
+}
+
+.section-white h2 {
+    width: 550px;
+    background-color: #0a3266;
+    padding: 12px 15px;
+    font-size: 58px;
+    font-family: 'AvenirLtStd-Black';
+    color: #f99d2a;
+    text-align: right;
+}
+.section-white > div > div> p {
+    color: #0a3266;
+    font-family: 'AvenirLtStd-Medium';
+    text-align: justify;
+}
+
+.video-content {
+    margin-top: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content h3 {
+    background-color: #ffffff;
+    color: #0a3266;
+    padding: 10px;
+    font-size: 48px;
+    font-family: 'AvenirLtStd-Heavy';
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.yellow-text {
+    color: #f99d2a;
+    font-size: 48px;
+    font-family: 'AvenirLtStd-Black';
+    text-align: center;
+}
+
+.white-head {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: 'AvenirLtStd-Black';
+    text-align: center;
+}
+
+.video-text-content {
+    color: #ffffff;
+    display: flex;
+    font-family: 'AvenirLtStd-Medium';
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#story {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.story-img {
+    background: url('img/story_02.png') no-repeat center center;
+    background-size: cover;
+    min-height: 460px;
+    position: relative;
+    display: flex;
+}
+
+.story-img::after {
+    content: '';
+    background: #093266;
+    opacity: 0.9;
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.story-img-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: -21%;
+}
+
+.story-content {
+    position: relative;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.story-content h3 {
+    font-size: 58.667px;
+    color: #f99d2a;
+    line-height: 1.10em;
+    font-family: 'AvenirLtStd-Light';
+}
+
+.story-content h3 > b {
+    font-family: 'AvenirLtStd-black';
+}
+
+.story-content h4 {
+    font-family: 'AvenirLtStd-Heavy';
+    color: #ffffff;
+    font-size: 38px;
+}
+
+.story-content h4 > span {
+    background-color:#F99D2A;
+    color: #ffffff;
+    line-height: 1.65em;
+    padding: 5px;
+}
+
+.ques-section {
+    position: relative;
+    z-index: 1;
+}
+
+.question {
+    color: #F99D2A;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'AvenirLtStd-black';
+}
+
+.ans-text{
+    color: #585B5C;
+    font-family: 'AvenirLtStd-Light';
+    text-align: justify;
+}
+
+.story-section {
+    background: url('img/story_03.1.png') no-repeat bottom center;
+    background-size: cover;
+    min-height: 950px;
+    position: relative;
+    margin-top: -75px;
+}
+
+.mice-business-section {
+    background: url('img/mice_business.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    padding: 4em 0em;
+}
+
+.mice-business-section::after {
+    content: '';
+    background: #093266;
+    opacity: 64%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mice-business-section > div {
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
+.business-head {
+    font-size: 51.25px;
+    color: #f99d2a;
+    line-height: 1.10em;
+    font-family: 'AvenirLtStd-Medium';
+    text-align: right;
+}
+
+.business-head > span {
+    background-color:#ffffff;
+    color: #093266;
+    line-height: 1.55em;
+    padding: 5px;
+}
+
+p.text-white {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'AvenirLtStd-Medium';
+    text-align: justify;
+}
+
+.text-white:last-child {
+    margin-bottom: 0px;
+}
+
+.portfolio-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -13%;
+}
+
+.portfolio-content h3 {
+    background-color: #ffffff;
+    color: #0a3266;
+    padding: 10px;
+    font-size: 48px;
+    font-family: 'AvenirLtStd-Heavy';
+    /* margin-top: -50px; */
+    z-index: 1;
+    text-align: center;
+}
+
+h2.bl-head {
+    background-color: #093266;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 48px;
+    font-family: 'AvenirLtStd-Black';
+    z-index: 1;
+    width: 200px;
+    text-align: center;
+    float: none;
+    margin: auto;
+} 
+
+.project-section::after {
+    content: '';
+    background: #231F20!important;
+    opacity: 77%!important;
+}
+
+.project-section > div > div > .business-head {
+    color: #ffffff;
+    line-height: 1.15em;
+    margin-bottom: 0px;
+}
+
+.project-section > div > div > .business-head > b {
+    font-family: 'AvenirLtStd-Black';
+    color: #F99D2A;
+}
+
+.project-section > div > div > .text-white {
+    line-height: 1.35em;
+}
+
+#donation > .container {
+    display: flex;
+}
+
+.blue-head {
+    font-size: 45.34px;
+    font-family: 'AvenirLtStd-Medium';
+    color: #093266;
+    line-height: 1.15em;
+}
+
+.blue-head > span {
+    background-color:#F99D2A;
+    color: #ffffff;
+    line-height: 1.55em;
+    padding: 5px;
+}
+
+.blue-head > b {
+    font-family: 'AvenirLtStd-Black';
+}
+
+#donation > .container > div > p.blue-text {
+    font-family: 'AvenirLtStd-Heavy';
+    line-height: 1.15em;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+
+}
+
+.charity-content {
+    display: flex;
+}
+
+.charity-content > .section-blue {
+    padding: 30px 35px;
+}
+
+.charity-head {
+    padding: 30px 35px;
+}
+
+.charity-head > .business-head > b {
+    font-family: 'AvenirLtStd-Black';
+    color: #F99D2A;
+}
+
+.charity-head > .business-head {
+    color: #093266;
+    line-height: .85em;
+}
+
+.charity-head > .business-head > span {
+    background-color: #093266;
+    color: #F99D2A;
+    font-family: 'AvenirLtStd-Black';
+    line-height: 1.35em;
+}
+
+#growth-plan > div {
+    display: flex;
+}
+
+#growth-plan > .container > div> .blue-head > span{
+    background-color: #093266;
+    color: #F99D2A;
+    font-family: 'AvenirLtStd-Black';
+}
+
+#growth-plan > .container > div> .blue-head > b {
+    color: #F99D2A;
+}
+
+#growth-plan > .div > div > p.blue-text {
+    font-family: 'AvenirLtStd-Heavy';
+    line-height: 1.15em;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.left-image {
+    width: 500px;
+    height: 544px;
+    /* background-size: cover;
+    position: relative; */
+}
+
+.left-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.growth-image > img {
+    margin-top: -65px;
+}
+
+.award-img > img {
+    width: 100%;
+    height: 550px;
+}
+
+.award-content-2 {
+        margin-top: -6%!important;
+        width: 52%;
+        float: none;
+        margin: auto;
+}
+
+.award-content-2 > h3 > .yellow {
+    color: #F99D2A;
+    font-family:'AvenirLtStd-Black';
+}
+
+.award-content-2 > h3 > b {
+    font-family:'AvenirLtStd-Black';
+}
+
+.team-champion-section::after {
+    background-color: #000000!important;
+    opacity: 45%!important;
+}
+
+.team-content > h3 {
+    color: #ffffff;
+}
+
+.team-content > h3 > span {
+    background-color: #F99D2A;
+    font-family:'AvenirLtStd-Black';
+    color: #ffffff;
+}
+
+#green > div,
+#hajj > div {
+    display: flex!important;
+}
+
+#green > div> .left-image {
+    height: 626px;
+}
+
+#green > div> .right-section > .blue-head {
+    margin-bottom: 0px;
+} 
+
+#green > div> .right-section > p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.award-content-3 {
+    width: 77%;
+} 
+
+.support-section::after {
+    background-color: #000000!important;
+    opacity: 78%!important;
+}
+
+.support-content > h3 {
+    color:#ffffff;
+    font-family: 'AvenirLtStd-Light';
+}
+
+.support-content > h3 > span {
+    font-family: 'AvenirLtStd-Heavy';
+    background-color: #F99D2A;
+    color: #ffffff;
+    line-height: 1.45em;
+}
+
+.right-section > .blue-head {
+    font-family: 'AvenirLtStd-Heavy';
+}
+
+.right-section > p {
+    font-family: 'AvenirLtStd-Medium';
+}
+
+/*Footer*/
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer > p {
+    font-family:'AvenirLtStd-Light';
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+#footer > p > span {
+    font-size: 18.66px;
+    color: #F99D2A;
+    font-family:'AvenirLtStd-Medium';
+    margin-bottom: 10px;
+}
+
+.guest-section::after {
+    background-color: #093266;
+    opacity: 68%;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width: 450px){
+    .banner {
+        min-height: 340px!important;
+    }  
+
+    .news-logo {
+        width: 80px;
+        margin-top: -40%;
+    }
+
+    .section-blue > h2 {
+        width: 165px;
+        font-size: 38px;
+    }
+
+    .nav-newsletter li::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav-newsletter li {
+        font-size: 16px;
+        //text-align: justify;
+    }
+
+    .section-white {
+        padding: 30px 0 0;
+    }
+
+    .section-white h2 {
+        width: 342px;
+        font-size: 38px;
+    }
+
+    .video-content h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: -30px;
+        line-height: 1.35em;
+    }
+
+    .yellow-text {
+        font-size: 18px;
+    }
+
+    .video-text-content,
+    .mice-business-section > div,
+    #donation > .container,
+    .charity-content,
+    #growth-plan > div,
+    #green > div, 
+    #hajj > div{
+        flex-wrap: wrap;
+    } 
+    
+    .story-img {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 85px;
+        min-height: 690px;
+        padding: 30px 15px;
+    }
+
+    .story-img::after {
+        height: 100%;
+    }
+
+    .story-img-content {
+        margin-top: -40%;
+        margin-left:0;
+    }
+
+    #story > .col-md-2 {
+        display: none;
+    }
+
+    .story-content {
+        margin-top: -5%;
+    }
+
+    .story-content h3 {
+        line-height: 1.15em;
+    }
+
+    .story-section {
+        min-height: 450px;
+    }
+
+    .business-head {
+        font-size: 38.25px;
+    }
+
+    .portfolio-content >  h2.bl-head {
+        width: 200px!important;
+    }
+
+    .portfolio-content {
+        margin-top: -20%!important;
+    }
+
+    .portfolio-content h3 {
+        font-size: 20px;
+    }
+
+    .award-img > img {
+        height: 300px;
+    }
+
+    #green > div> .left-image {
+        height: 525px;
+    }
+
+    .left-image {
+        width: 500px;
+        height: 450px;
+    }
+
+    #footer > p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    p.text-white {
+        margin-bottom: 0em;
+        margin-top: 1em;
+    }
+
+    .charity-head {
+        padding: 30px 0px;
+    }
+
+    .charity-head > .business-head {
+        line-height: 1.15em;
+        margin-bottom: 0;
+    }
+
+    .charity-head > .business-head > span {
+        line-height: 1.65em;
+    }
+
+    .charity-content > .section-blue {
+        padding: 10px 15px;
+        min-height: 586px;
+    }
+
+    .blue-head {
+        font-size: 38px;
+        line-height: 1.65em;
+        margin-bottom: 0;
+    }
+
+    .white-head {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .video-content {
+        margin-top: 5px;
+    }
+
+    .video-content h3 {
+        font-size: 24px;
+    }
+
+    .yellow-text {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .video-text-content,
+    .mice-business-section > div,
+    #donation > .container,
+    .charity-content,
+    #growth-plan > div,
+    #green > div, 
+    #hajj > div {
+        flex-wrap: wrap;
+    }
+
+    .story-img {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 85px;
+        min-height: 600px;
+        padding: 30px 15px;
+    }
+
+    .story-img::after {
+        height: 100%;
+    }
+
+    .story-img-content {
+        margin-top: -25%;
+        margin-left:0;
+    }
+
+    #story > .col-md-2 {
+        display: none;
+    }
+
+    .story-content {
+        margin-top: -5%;
+    }
+
+    .story-content h3 {
+        line-height: 1.15em;
+    }
+
+    .story-section {
+        min-height: 450px;
+    }
+
+    p.text-white {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+    .portfolio-content {
+        margin-top: -18%;
+    }
+
+    h2.bl-head {
+        font-size: 24px;
+        width: 112px;
+    }
+
+    .portfolio-content h3 {
+        font-size: 28px;
+    }
+
+    .blue-head {
+        line-height: 1.65em;
+        margin-bottom: 0;
+    }
+
+    .charity-head {
+        padding: 30px 0px;
+    }
+
+    .award-img > img {
+        width: 100%;
+        height: 410px;
+    }
+
+    .award-content-2 {
+        margin-top: -10%!important;
+        width: 348px;
+    }
+
+    #green > div> .left-image {
+        height: 390px;
+        width: 100%;
+    }
+
+    .award-content-3 {
+        width: 95%!important;
+    }
+
+    .white-head {
+        font-size: 24px;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .left-image {
+        width: 100%;
+        height: 390px;
+    }
+        
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .banner {
+        min-height: 550px;
+    }
+
+    .video-content h3 {
+        font-size: 28px;
+    }
+
+    .yellow-text {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .story-img-content {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: -16%;
+    }
+
+    .story-img-content > img {
+        max-width: 600px;
+    }
+
+    .story-content {
+        margin-top: 8%;
+        padding: 0px 50px;
+    }
+
+    .story-section {
+        min-height: 550px;
+    }
+
+    .business-head {
+        font-size: 40px;
+        line-height: 1.15em;
+    }
+
+    .portfolio-content {
+        margin-top: -15%;
+    }
+
+    h2.bl-head, .portfolio-content h3 {
+        font-size: 28px;
+    }
+
+    .charity-head > .business-head > span {
+        line-height: 1.65em;
+    }
+
+    .growth-image > img {
+        margin-top: 50%;
+    }
+
+    .team-content > h3 {
+        font-size: 38px!important;
+    }
+
+    #green > div> .left-image {
+        height: 450px;
+        margin-top: 20%;
+    }
+
+    .white-head {
+        font-size: 28px;
+    }
+
+    .left-image {
+        width: 100%;
+        height: 405px;
+        margin-top: 20%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .award-content-2 {
+        width: 55%;
+    }
+
+    .award-content-3 {
+        width: 80%;
+    }
+
+    .left-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .none {
+        display: none;
+    }
+}
